@@ -42,7 +42,6 @@ void loop() {
     } else if (redPressed && greenPressed && bluePressed) {
         setColor(255, 255, 255); // White
     } else {
-        setColor(0, 0, 0); // Off
         setColor(0, 0, 0); // Turns off the LED
     }
 }
