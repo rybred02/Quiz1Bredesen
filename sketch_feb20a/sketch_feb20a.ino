@@ -33,6 +33,15 @@ void loop() {
         setColor(0, 255, 0); // Green
     } else if (!redPressed && !greenPressed && bluePressed) {
         setColor(0, 0, 255); // Blue
+    } else if (redPressed && greenPressed && !bluePressed) {
+        setColor(255, 255, 0); // Yellow
+    } else if (redPressed && !greenPressed && bluePressed) {
+        setColor(128, 0, 128); // Purple
+    } else if (!redPressed && greenPressed && bluePressed) {
+        setColor(0, 255, 255); // Cyan
+    } else if (redPressed && greenPressed && bluePressed) {
+        setColor(255, 255, 255); // White
+    } else {
         setColor(0, 0, 0); // Off
     }
 }
