@@ -12,7 +12,7 @@ void setColor(int red, int green, int blue) {
     analogWrite(greenPin, green);
     analogWrite(bluePin, blue);
 }
-
+// Sets the output for the pins
 void setup() {
     pinMode(redPin, OUTPUT);
     pinMode(greenPin, OUTPUT);
@@ -21,7 +21,7 @@ void setup() {
     pinMode(buttonGreen, INPUT);
     pinMode(buttonBlue, INPUT);
 }
-
+// If the red, green, blue button is pressed, then turn them on function
 void loop() {
     int redPressed = digitalRead(buttonRed) == HIGH;
     int greenPressed = digitalRead(buttonGreen) == HIGH;
@@ -43,5 +43,6 @@ void loop() {
         setColor(255, 255, 255); // White
     } else {
         setColor(0, 0, 0); // Off
+        setColor(0, 0, 0); // Turns off the LED
     }
 }
