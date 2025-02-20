@@ -6,7 +6,7 @@ const int buttonRed = 5;
 const int buttonGreen = 6;
 const int buttonBlue = 7;
 
-// Function to set LED color
+// This sets the LED color
 void setColor(int red, int green, int blue) {
     analogWrite(redPin, red);
     analogWrite(greenPin, green);
@@ -41,8 +41,5 @@ void loop() {
         setColor(0, 255, 255); // Cyan
     } else if (redPressed && greenPressed && bluePressed) {
         setColor(255, 255, 255); // White
-    } else {
-        setColor(0, 0, 0); // Off
-        setColor(0, 0, 0); // Turns off the LED
-    }
+    } 
 }
