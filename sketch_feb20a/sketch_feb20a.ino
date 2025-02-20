@@ -41,5 +41,5 @@ void loop() {
         setColor(0, 255, 255); // Cyan
     } else if (redPressed && greenPressed && bluePressed) {
         setColor(255, 255, 255); // White
-    } 
+    }
 }
